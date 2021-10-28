@@ -1,0 +1,30 @@
+{
+  "name": "react-native-storyboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@storybook/react": "^6.3.12",
+    "@types/react": "^17.0.33",
+    "@types/react-native": "^0.66.1",
+    "D": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-native": "^0.66.1",
+    "react-native-svg": "^12.1.1",
+    "react-native-svg-transformer": "^0.14.3",
+    "react-native-web": "^0.17.5",
+    "storybook-color-picker": "^2.1.4"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^6.3.12",
+    "babel-plugin-inline-react-svg": "^2.0.1"
+  }
+}
