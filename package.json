@@ -21,7 +21,8 @@
     "react-native-svg": "^12.1.1",
     "react-native-svg-transformer": "^0.14.3",
     "react-native-web": "^0.17.5",
-    "storybook-color-picker": "^2.1.4"
+    "storybook-color-picker": "^2.1.4",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^6.3.12",
