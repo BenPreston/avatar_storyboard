@@ -5,16 +5,17 @@ const pathId = `path${Math.round(Math.random() * 9999999)}`;
 
 const FaceSVG = ({ color, width, height }) => (
   <svg
-    // style={{
-    //   width: "100%",
-    //   height: "100%",
-    //   position: "absolute",
-    // }}
+    style={{
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+    }}
     width={width + "px"}
     height={height + "px"}
     viewBox="0 0 200 320"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    overflow="hidden"
   >
     <g clipPath="url(#clip0)">
       <path

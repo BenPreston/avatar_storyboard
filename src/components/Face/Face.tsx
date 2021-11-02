@@ -13,7 +13,7 @@ interface FaceProps {
  */
 export const Face = ({ color, width, height }: FaceProps) => {
   return (
-    <View>
+    <View style={{ width: "100%", height: "100%", position: "absolute" }}>
       <FaceSVG color={color} width={width} height={height} />
     </View>
   );

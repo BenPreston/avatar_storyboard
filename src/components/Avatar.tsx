@@ -11,6 +11,7 @@ interface AvatarProps {
   earSize?: "small" | "big";
   shape?: "circle" | "rounded" | "square";
   shapeSize?: number;
+  backgroundColor: string;
 }
 
 export const Avatar = ({
@@ -18,6 +19,7 @@ export const Avatar = ({
   earSize,
   shape,
   shapeSize,
+  backgroundColor,
   ...props
 }: AvatarProps) => {
   // Background shape
@@ -32,20 +34,20 @@ export const Avatar = ({
       break;
     }
     case "square": {
-      borderRadius = 0;
+      borderRadius = "0";
       break;
     }
   }
 
   return (
-    <Container width={shapeSize} height={shapeSize} borderRadius={borderRadius}>
-      {/* <Face width={shapeSize} height={shapeSize} color={skinColor} />
-      {earSize === "small" ? (
-        <BigEar earColor={skinColor} />
-      ) : (
-        <SmallEar earColor={skinColor} />
-      )} */}
-    </Container>
+    <Container
+      width={shapeSize}
+      height={shapeSize}
+      borderRadius={borderRadius}
+      backgroundColor={backgroundColor}
+      earSize={earSize}
+      skinColor={skinColor}
+    ></Container>
   );
 
   // const styles = StyleSheet.create({
