@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View } from "react-native";
 
 import Container from "./Container";
 import { Face } from "./Face/Face";
@@ -10,7 +10,7 @@ interface AvatarProps {
   skinColor?: string;
   earSize?: "small" | "big";
   shape?: "circle" | "rounded" | "square";
-  shapeSize?: string;
+  shapeSize?: number;
 }
 
 export const Avatar = ({
@@ -38,16 +38,14 @@ export const Avatar = ({
   }
 
   return (
-    <View>
-      <Container width={shapeSize} height={shapeSize}>
-        <Face color={skinColor} />
-        {earSize === "small" ? (
-          <BigEar earColor={skinColor} />
-        ) : (
-          <SmallEar earColor={skinColor} />
-        )}
-      </Container>
-    </View>
+    <Container width={shapeSize} height={shapeSize} borderRadius={borderRadius}>
+      {/* <Face width={shapeSize} height={shapeSize} color={skinColor} />
+      {earSize === "small" ? (
+        <BigEar earColor={skinColor} />
+      ) : (
+        <SmallEar earColor={skinColor} />
+      )} */}
+    </Container>
   );
 
   // const styles = StyleSheet.create({

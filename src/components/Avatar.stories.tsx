@@ -18,6 +18,6 @@ export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
   skinColor: "#dff113",
-  width: "100px",
-  height: "100px",
+  shapeSize: 300,
+  shape: "circle",
 };

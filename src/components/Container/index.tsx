@@ -3,14 +3,26 @@ import { View } from "react-native";
 import { Face } from "../Face/Face";
 
 interface ContainerProps {
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
+  borderRadius?: string;
 }
 
-const Container = ({ width, height }: ContainerProps) => {
+const Container = ({ width, height, borderRadius }: ContainerProps) => {
   return (
-    <View style={{ width, height }}>
-      <Face />
+    <View
+      style={{
+        width,
+        height,
+        borderWidth: 5,
+        borderRadius: borderRadius,
+        // borderTopLeftRadius: 20,
+        // borderTopRightRadius: 20,
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      {/* <Face width={width} height={height} /> */}
     </View>
   );
 };
