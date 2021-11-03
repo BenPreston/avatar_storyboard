@@ -44,17 +44,6 @@ const AvatarSVG = ({
       </clipPath>
 
       <g id="CS_Avatar" clip-path="url(#myClip)">
-        {/* <mask
-          id="mask0_65:1440"
-          // style="mask-type:alpha"
-          maskUnits="userSpaceOnUse"
-          x="0"
-          y="0"
-          width="380"
-          height="380"
-        >
-          <circle id="Mask" cx="190" cy="190" r="190" fill="#FFEDEF" />
-        </mask> */}
         {Background(backgroundColor, backgroundShape)[backgroundShape]}
         <g mask="url(#mask0_65:1440)"></g>
         <g id="Base/1" clip-path="url(#clip0_65:1440)">
@@ -68,7 +57,6 @@ const AvatarSVG = ({
             />
             <mask
               id="mask1_65:1440"
-              // style="mask-type:alpha"
               maskUnits="userSpaceOnUse"
               x="120"
               y="254"
@@ -82,10 +70,7 @@ const AvatarSVG = ({
               />
             </mask>
             <g mask="url(#mask1_65:1440)">
-              <g
-                id="Ellipse 42"
-                // style="mix-blend-mode:multiply"
-              >
+              <g id="Ellipse 42">
                 <ellipse cx="214" cy="252" rx="59" ry="54" fill="black" />
               </g>
             </g>
