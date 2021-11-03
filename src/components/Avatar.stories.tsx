@@ -19,8 +19,8 @@ export const Primary = Template.bind({});
 Primary.args = {
   eyeType: "Round" || "Eyeshadow" || "Eyes" || "Smiling",
   backgroundShape: "Circle" || "Square" || "Rounded",
-  backgroundColor: "#ded388",
-  skinColor: "green",
+  backgroundColor: "grey",
+  skinColor: "yellow",
   earType: "Round" || "WithEarLobe",
   earRingType: "None" || "Stud" || "Hoop",
   mouthType:
@@ -33,8 +33,20 @@ Primary.args = {
     "Suprised" ||
     "Laughing",
   hairType:
-    "Fonze" || "MrT" || "Doug" || "Danny" || "Full" || "Turban" || "Pixie",
-  hairColor: "Black",
+    "Fonze" ||
+    "MrT" ||
+    "Doug" ||
+    "Danny" ||
+    "Full" ||
+    "Turban" ||
+    "Pixie" ||
+    "Bald",
+  hairColor: "#654321",
   noseType: "Round" || "Pointed" || "Curved",
   eyeBrowsType: "Up" || "Down" || "EyeLashesUp" || "EyeLashesDown",
+  glassesType: "Round" || "Sqaure" || "None",
+  facialHairType: "None" || "Stubble" || "Beard",
+  shirtType: "Collared" || "Crew" || "Open",
+  shirtColor: "red",
+  collarColor: "white",
 };

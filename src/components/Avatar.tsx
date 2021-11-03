@@ -18,10 +18,23 @@ interface AvatarProps {
     | "Smile"
     | "Suprised"
     | "Laughing";
-  hairType: "Fonze" | "MrT" | "Doug" | "Danny" | "Full" | "Turban" | "Pixie";
+  hairType:
+    | "Fonze"
+    | "MrT"
+    | "Doug"
+    | "Danny"
+    | "Full"
+    | "Turban"
+    | "Pixie"
+    | "Bald";
   hairColor: string;
   noseType: "Round" | "Pointed" | "Curved";
   eyeBrowsType: "Up" | "Down" | "EyeLashesUp" | "EyeLashesDown";
+  glassesType: "None" | "Round" | "Square";
+  facialHairType: "None" | "Stubble" | "Beard";
+  shirtType: "Collared" | "Crew" | "Open";
+  shirtColor: string;
+  collarColor: string;
 }
 
 export const Avatar = ({
@@ -36,6 +49,11 @@ export const Avatar = ({
   hairColor,
   noseType,
   eyeBrowsType,
+  glassesType,
+  facialHairType,
+  shirtType,
+  shirtColor,
+  collarColor,
   ...props
 }: AvatarProps) => {
   return (
@@ -52,6 +70,11 @@ export const Avatar = ({
         hairColor={hairColor}
         noseType={noseType}
         eyeBrowsType={eyeBrowsType}
+        glassesType={glassesType}
+        facialHairType={facialHairType}
+        shirtType={shirtType}
+        shirtColor={shirtColor}
+        collarColor={collarColor}
       />
     </View>
   );
