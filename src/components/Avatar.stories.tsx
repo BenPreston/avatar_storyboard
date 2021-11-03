@@ -17,9 +17,12 @@ const Template: ComponentStory<typeof Avatar> = (args) => <Avatar {...args} />;
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Primary.args = {
-  skinColor: "#dff113",
-  shapeSize: 400,
-  shape: "circle",
-  backgroundColor: "red",
-  earSize: "small",
+  // skinColor: "#dff113",
+  // shapeSize: 400,
+  // shape: "circle",
+
+  // earSize: "small",
+  eyeType: "Round" || "Eyeshadow" || "Eyes" || "Smiling",
+  backgroundShape: "Circle" || "Square" || "Rounded",
+  backgroundColor: "#ded388",
 };
